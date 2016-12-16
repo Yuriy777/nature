@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>How to book</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 " />
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div class="container">
+					<div class="logo">
+						<a href="#">
+							<img src="images/logo.png" alt="logo">
+						</a>
+					</div>
+					<div class="header-right">
+						<p>For Friendly, Expert advice call</p>
+						<strong>12 (0) 1234 567890</strong>
+						<nav class="top-nav">
+					<ul>
+						<li>
+							<a href="index.html">home</a>
+						</li>
+						<li>
+							<a href="how to.html">How to book</a>
+						</li>
+						<li>
+							<a href="#">Faqs</a>
+						</li>
+						<li>
+							<a href="#">Visit us</a>
+						</li>
+						<li>
+							<a href="#">contact us</a>
+						</li>
+					</ul>
+						</nav>
+					</div>
+				<a href="#" class="menu-opener">
+					<span></span>
+				</a>
+				<nav class="general-nav">
+				<ul>
+					<li>
+						<a href="#">DESTINATIONS</a>
+					</li>
+					<li>
+						<a href="#">SPECIES</a>
+					</li>
+					<li>
+						<a href="#">TOUR TYPES</a>
+					</li>
+					<li>
+						<a href="#">TOUR LEADERS</a>
+					</li>
+					<li>
+						<a href="#">LATE AVAILABILITY</a>
+					</li>
+					<li>
+						<a href="#">LATEST NEWS</a>
+					</li>
+					<li>
+						<a href="#">ABOUT US</a>
+					</li>
+				</ul>
+				</nav>
+			</div>
+		</header>
+		<main id="main" class="clearfix">
+			<div class="container">
+				<span class="page">How to book</span>
+				<div class="twocolumn">
+					<div class="content">
+						<!--slideshow-->
+						<div id="owl-demo" class="owl-carousel owl-theme" >
+							<div class="item">
+								<img src="images/003.jpg" alt="lion">
+								<article class="items-text">
+									<h1>Our <span>New Tours</span></h1>
+									<p>At Naturetour we are constantly adding to and improving our portfolio of wildlife holidays to provide you with an even greater choice of wildlife viewing experiences. </p>
+									<a href="#">View new tours...</a>
+								</article>
+							</div>
+							<div class="item">
+								<img src="images/004.jpg" alt="giraffe">
+								<article class="items-text">
+									<h1>Our <span>New Tours</span></h1>
+									<p>At Naturetour we are constantly adding to and improving our portfolio of wildlife holidays to provide you with an even greater choice of wildlife viewing experiences. </p>
+									<a href="#">View new tours...</a>
+								</article>
+							</div>
+							<div class="item">
+								<img src="images/003.jpg" alt="lion">
+								<article class="items-text">
+									<h1>Our <span>New Tours</span></h1>
+									<p>At Naturetour we are constantly adding to and improving our portfolio of wildlife holidays to provide you with an even greater choice of wildlife viewing experiences. </p>
+									<a href="#">View new tours...</a>
+								</article>
+							</div>
+							<div class="item">
+								<img src="images/004.jpg" alt="giraffe">
+								<article class="items-text">
+									<h1>Our <span>New Tours</span></h1>
+									<p>At Naturetour we are constantly adding to and improving our portfolio of wildlife holidays to provide you with an even greater choice of wildlife viewing experiences. </p>
+									<a href="#">View new tours...</a>
+								</article>
+							</div>
+						</div>
+					</div>
+						<aside class="sidebar">
+						<section class="a-section">
+							<div class="bf-search">
+								<h4>holiday search</h4>
+								<p>Start your holiday search here:</p>
+								<form>
+									<div class="view">
+										<select id="region">
+											<option value="">Select Region</option>
+											<option value="region1">Region 1</option>
+											<option value="region2">Region 2</option>
+											<option value="region3">Region 3</option>
+										</select>
+									</div>
+									<div class="view">
+										<select id="cetegory">
+											<option value="">Select Category</option>
+											<option value="category1">Category 1</option>
+											<option value="category2">Category 2</option>
+											<option value="category3">Category 3</option>
+										</select>
+									</div>
+									<div class="view">
+										<select id="date">
+											<option value="">Select Date</option>
+											<option value="date1">Date 1</option>
+											<option value="date2">Date 2</option>
+											<option value="date3">Date 3</option>
+										</select>
+									</div>
+									<div class="view">
+										<select id="price">
+											<option value="">Select Price</option>
+											<option value="date1">Price 1</option>
+											<option value="date2">Price 2</option>
+											<option value="date3">Price 3</option>
+										</select>
+									</div>
+									<button>Search <span>holidays</span></button>
+								</form>
+							</div>
+						</section>
+					</aside>
+				</div>
+			</div>
+		</main>
+	</div>
+	<footer id="footer">
+			<div class="container">
+				<div class="footer">
+					<span class="copiright">&copy; <strong>Naturetour 2010.</strong></span>
+					<p>No portion of this website may be reproduced without the prior written consent of Naturetour. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/burger.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/jquery.selectric.min.js"></script>
+	<script type="text/javascript">
+		$('select').selectric();
+		$('#set_value').selectric();
+			$('#set_first_option').on('click', function() {
+				$('#set_value').prop('selectedIndex', 0).selectric('refresh');
+			});
+			$('#set_second_option').on('click', function() {
+				$('#set_value').prop('selectedIndex', 1).selectric('refresh');
+			});
+			$('#set_third_option').on('click', function() {
+				$('#set_value').prop('selectedIndex', 2).selectric('refresh');
+			});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#owl-demo").owlCarousel({
+			navigation : true, // Show next and prev buttons
+			slideSpeed : 300,
+			paginationSpeed : 400,
+			singleItem:true
+			// "singleItem:true" is a shortcut for:
+			// items : 1, 
+			// itemsDesktop : false,
+			// itemsDesktopSmall : false,
+			// itemsTablet: false,
+			// itemsMobile : false
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			var tabs = $('#tabs');
+			$('.tabs-content > div', tabs).each(function(i){
+				if ( i != 0 ) $(this).hide(0);
+			});
+			tabs.on('click', '.tabs a', function(e){
+				/* Предотвращаем стандартную обработку клика по ссылке */
+				e.preventDefault();
+
+				/* Узнаем значения ID блока, который нужно отобразить */
+				var tabId = $(this).attr('href');
+
+				/* Удаляем все классы у якорей и ставим active текущей вкладке */
+				$('.tabs a',tabs).removeClass();
+				$(this).addClass('active');
+
+				/* Прячем содержимое всех вкладок и отображаем содержимое нажатой */
+				$('.tabs-content > div', tabs).hide(0);
+				$(tabId).show();
+			});
+		});
+	</script>
+</body>
+</html>
